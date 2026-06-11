@@ -18,6 +18,3 @@ resource "azurerm_storage_account" "name" {
   output "storage_account_name" {
     value = azurerm_storage_account.name.name
   }
-  output "storage_container_name" {
-    value = azurerm_storage_container.name.name
-  }   
