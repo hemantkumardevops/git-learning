@@ -15,3 +15,6 @@ resource "azurerm_storage_account" "name" {
     storage_account_name  = azurerm_storage_account.name.name
     container_access_type = "private"
   }
+  output "storage_account_name" {
+    value = azurerm_storage_account.name.name
+  }
